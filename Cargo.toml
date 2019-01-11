@@ -1,0 +1,17 @@
+[package]
+name = "serde_fallback"
+version = "0.1.0"
+authors = ["Christian Duerr <contact@christianduerr.com>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "0.15.24", features = ["extra-traits", "full"] }
+quote = "0.6.10"
+
+[dev-dependencies]
+serde_derive = "1.0.84"
+serde_yaml = "0.8.8"
+serde = "1.0.84"
